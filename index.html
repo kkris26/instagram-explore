@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kriss-design</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jquery -->
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- icon -->
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="box-topBar">
+          <img src="icon/chevron-left.svg" alt="" />
+          <h1 class="explore">Explore</h1>
+          <i class="bx bx-chevron-left hide-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="account">
+      <div class="container">
+        <div class="box-account">
+          <div class="profile">
+            <div class="box-img">
+              <img src="profile/krisnu.jpeg" alt="" />
+            </div>
+            <p>kriss-design</p>
+            <div class="verif">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-circle-check"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="blue"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <path d="M9 12l2 2l4 -4" />
+              </svg>
+            </div>
+          </div>
+          <div class="profile-info">
+            <button class="follow" id="follow">Follow</button>
+            <button class="follow" id="following">Following</button>
+            <i class="bx bx-dots-vertical-rounded" id="more-button"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-heart like-content"
+        width="100"
+        height="100"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        fill="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+        />
+      </svg>
+      <!-- Swiper -->
+      <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="profile/krisnu.jpeg" alt="" id="postingan" />
+          </div>
+          <div class="swiper-slide">
+            <img src="profile/krisnu.jpeg" alt="" id="postingan" />
+          </div>
+          <div class="swiper-slide">
+            <img src="profile/krisnu.jpeg" alt="" id="postingan" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div> -->
+      <!-- swiper -->
+
+      <!-- content -->
+      <img src="profile/krisnu-v2.jpg" alt="" id="postingan" />
+      <!-- content -->
+    </div>
+    <div class="action">
+      <div class="saved">
+        <div class="content-save">
+          <img src="profile/krisnu-v2.jpg" alt="" />
+          <p>Saved</p>
+        </div>
+        <a href="">Save to Collection</a>
+      </div>
+      <div class="container">
+        <div class="box-action">
+          <div class="box-left">
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart heart-empety"
+                id="heart"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.7"
+                stroke="#262626"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart heart-empety-active"
+                id="heart"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.7"
+                stroke="#262626"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                id="heart-fill"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.7"
+                stroke="red"
+                fill="red"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-message-circle"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#262626"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              <line x1="12" y1="12" x2="12" y2="12.01" />
+              <line x1="8" y1="12" x2="8" y2="12.01" />
+              <line x1="16" y1="12" x2="16" y2="12.01" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-send"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#262626"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+              <path
+                d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"
+              />
+            </svg>
+          </div>
+          <div class="box-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bookmark bookmark"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bookmark bookmark-empety"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bookmark bookmark-fill"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#000000"
+              fill="000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="save-action">
+      <img src="profile/krisnu-v2.jpg" alt="" />
+    </div>
+    <div class="like">
+      <div class="container">
+        <div class="box-like">
+          <p><span id="likes">997</span> likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="caption">
+      <div class="container">
+        <div class="box-caption">
+          <p>
+            <span>kriss-design</span> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Vero itaque pariatur <br />
+            <br />
+            maxime saepe nemo debitis facilis fugiat sed ratione officiis quam
+            eius similique sapiente, assumenda praesentium quia! Illo <br />
+            <br />
+            est provident dolorem. Laudantium, maxime voluptas facilis libero
+            harum asperiores maiores. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Esse repudiandae incidunt mollitia reprehenderit
+            laudantium
+          </p>
+          <p class="date">SEPTEMBER 31</p>
+        </div>
+      </div>
+    </div>
+    <div class="more-wrapper">
+      <p>h</p>
+    </div>
+    <div class="more">
+      <div class="box-more">
+        <p>-</p>
+        <div class="box1">
+          <div class="share">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-share"
+              width="62"
+              height="62"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="6" r="3" />
+              <circle cx="18" cy="18" r="3" />
+              <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+              <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+            </svg>
+            <p>Share</p>
+          </div>
+          <div class="link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-link"
+              width="62"
+              height="62"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+              />
+              <path
+                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+              />
+            </svg>
+            <p>Link</p>
+          </div>
+          <div class="save">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bookmarks"
+              width="62"
+              height="62"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M13 7a2 2 0 0 1 2 2v12l-5 -3l-5 3v-12a2 2 0 0 1 2 -2h6z"
+              />
+              <path d="M9.265 4a2 2 0 0 1 1.735 -1h6a2 2 0 0 1 2 2v12l-1 -.6" />
+            </svg>
+            <p>Save</p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="container">
+            <div class="row1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-eye-off"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="3" y1="3" x2="21" y2="21" />
+                <path d="M10.584 10.587a2 2 0 0 0 2.828 2.83" />
+                <path
+                  d="M9.363 5.365a9.466 9.466 0 0 1 2.637 -.365c4 0 7.333 2.333 10 7c-.778 1.361 -1.612 2.524 -2.503 3.488m-2.14 1.861c-1.631 1.1 -3.415 1.651 -5.357 1.651c-4 0 -7.333 -2.333 -10 -7c1.369 -2.395 2.913 -4.175 4.632 -5.341"
+                />
+              </svg>
+              <p>Not interested</p>
+            </div>
+            <div class="row2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-alert-circle"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="red"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <p>Report</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="box-menu">
+          <div class="home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-home"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="5 12 3 12 12 3 21 12 19 12" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+            </svg>
+            <span>q</span>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-search"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-square-plus"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+          </svg>
+          <div class="message">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-messenger"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+              <path d="M8 13l3 -2l2 2l3 -2" />
+            </svg>
+            <p>11</p>
+          </div>
+          <div class="box-img profile-menu">
+            <img src="profile/krisnu.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
